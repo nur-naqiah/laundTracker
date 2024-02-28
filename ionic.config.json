@@ -1,0 +1,7 @@
+{
+  "name": "laundtracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
