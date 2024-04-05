@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Welcome to LaundTracker!</h2>
+  <p>To get started with the app, please create an account:</p>
+
+  <ion-item>
+    <ion-label position="stacked">Username</ion-label>
+    <ion-input type="text" placeholder="Enter your username" id="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Email</ion-label>
+    <ion-input type="email" placeholder="Enter your email" id="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input type="password" placeholder="Enter your password" id="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="createAccount()">Create Account</ion-button>
+</ion-content>

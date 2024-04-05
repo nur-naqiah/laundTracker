@@ -3,14 +3,25 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'getting-started',
+    loadChildren: () => import('./getting-started/getting-started.module').then( m => m.GettingStartedPageModule)
   },
+  {
+    path: 'machine',
+    loadChildren: () => import('./machine/machine.module').then( m => m.MachinePageModule)
+  },
+  {
+    path: 'wash-machine',
+    loadChildren: () => import('./wash-machine/wash-machine.module').then( m => m.WashMachinePageModule)
+  },
+  {
+    path: 'dry-machine',
+    loadChildren: () => import('./dry-machine/dry-machine.module').then( m => m.DryMachinePageModule)
+  }
 ];
 
 @NgModule({
