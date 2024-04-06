@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { DryMachinePageRoutingModule } from './dry-machine-routing.module';
-import { DryMachinePage } from './dry-machine.page';
+
+import { NotificationPageRoutingModule } from './notification-routing.module';
+
+import { NotificationPage } from './notification.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DryMachinePageRoutingModule
+    NotificationPageRoutingModule
   ],
-  declarations: [DryMachinePage]
+  declarations: [NotificationPage]
 })
-export class DryMachinePageModule {}
+export class NotificationPageModule {}

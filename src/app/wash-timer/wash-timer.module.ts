@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { DryMachinePageRoutingModule } from './dry-machine-routing.module';
-import { DryMachinePage } from './dry-machine.page';
+
+import { WashTimerPageRoutingModule } from './wash-timer-routing.module';
+
+import { WashTimerPage } from './wash-timer.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DryMachinePageRoutingModule
+    WashTimerPageRoutingModule
   ],
-  declarations: [DryMachinePage]
+  declarations: [WashTimerPage]
 })
-export class DryMachinePageModule {}
+export class WashTimerPageModule {}

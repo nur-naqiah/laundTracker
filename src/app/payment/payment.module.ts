@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { GettingStartedPageRoutingModule } from './getting-started-routing.module';
-import { GettingStartedPage } from './getting-started.page';
+
+import { PaymentPageRoutingModule } from './payment-routing.module';
+
+import { PaymentPage } from './payment.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GettingStartedPageRoutingModule
+    PaymentPageRoutingModule
   ],
-  declarations: [GettingStartedPage]
+  declarations: [PaymentPage]
 })
-export class GettingStartedPageModule {}
+export class PaymentPageModule {}

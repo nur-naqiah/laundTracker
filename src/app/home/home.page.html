@@ -1,0 +1,85 @@
+<ion-toolbar style="--background: #ffffff; padding: 2%;">
+  <ion-title style="--color: #333333; font-size: 15px; font-weight: bold;">Hello, <br> Naqiah!</ion-title>
+    <ion-buttons slot="start">
+      <ion-button style="width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s ease;" (click)="goToProfile()">
+        <ion-icon slot="icon-only" name="person" style="color: #333333;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToNotifications()">
+        <ion-icon slot="icon-only" name="notifications" style="color: #333333;"></ion-icon>
+      </ion-button>
+      <ion-button (click)="goToMessages()">
+        <ion-icon slot="icon-only" name="mail-outline" style="color: #333333;"></ion-icon>
+      </ion-button>
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out-outline" style="color: #333333;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+<ion-content class="ion-padding" style="--background: #ffffff;">
+  
+  <h2 style="color: #333333; font-weight: 900; font-size: 30px;">Let’s be productive. It’s time to do your laundry!</h2>
+  <p style="color: #333333; font-weight: 900">Laundry Pricelist</p>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="text-align: center; font-size: 15px; border-bottom: 2px solid #ccc;">1 token - $5.00
+        <br>
+        <br>
+      </ion-card-title>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <div style="text-align: center; font-size: 15px; color:#ffffff">
+              <ion-text style="font-weight: 800;">Washer</ion-text>
+              <br>
+              <ion-text>1 token - 5 min <br> 2 token - 10 min</ion-text>
+              </div>
+            </ion-col>
+  
+            <ion-col size="6"  style="border-left: 2px solid #ccc;">
+              <div style="text-align: center; font-size: 15px; color:#ffffff">
+              <ion-text style="font-weight: 800;">Dryer</ion-text>
+              <br>
+              <ion-text>1 token - 15 min <br> 2 token - 30 min</ion-text>
+            </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+  <p style="color: #333333; font-weight: 900">Select Service</p>
+
+    <ion-grid>
+      <ion-row style="display: flex; justify-content: center; align-items: center; height: 200px;">
+        <ion-col size="4" style="display: flex; justify-content: center; align-items: center; height: 200px;">
+          <ion-card style="--background: #ffffff; width: 300px; height: 200px; padding-top: 30px;">
+            <ion-card-header style="display: flex; justify-content: center; align-items: center; height: 100px;">
+                <img src="assets/wash.svg" alt="Wash Icon" style="width: 50px; height: 50px; align-items: center;">
+            </ion-card-header>
+            <ion-card-content style="text-align: center; color: #333333;">
+              Wash
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+  
+        <ion-col size="4" style="display: flex; justify-content: center; align-items: center; height: 200px;">
+          <ion-card style="--background: #ffffff; width: 300px; height: 200px; padding-top: 30px;">
+            <ion-card-header style="display: flex; justify-content: center; align-items: center; height: 100px;">
+                <img src="assets/dry.svg " alt="Wash Icon" style="width: 50px; height: 50px; align-items: center;">
+            </ion-card-header>
+            <ion-card-content style="text-align: center; color: #333333;">
+              Dry
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+
+</ion-content>
