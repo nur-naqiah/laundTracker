@@ -3,18 +3,29 @@
   <h2>Log In</h2>
   <p>Log in to your account to access the app</p>
 
-  <ion-item style="--background: #ffffff;">
-    <ion-label position="stacked" style="--color: #333333; font-size: 20px">Username:</ion-label>
-    <br>
-    <ion-input type="text" name="username" style="--color: #333333;  background-color: rgba(0, 0, 0, 0.1);">Naqiah</ion-input>
-  </ion-item>
+  <ion-label style="color: #000000; padding-left: 1px;">
+    Username:
+  </ion-label>
 
-  <ion-item style="--background: #ffffff;">
-    <ion-label position="stacked" style="--color: #333333; font-size: 20px">Password:</ion-label>
-    <br>
-    <ion-input type="password" id="password" style="--color: #333333; background-color: rgba(0, 0, 0, 0.1);">**********</ion-input>
-  </ion-item>
+  <br>
+  
+  <div style="padding-left: 1px;">
+  <ion-input type="text" placeholder="   Enter your name" name="username" style="--color: #000000;  background-color: rgba(0, 0, 0, 0.1); width: 1228px; border-radius: 5px;"></ion-input>
+  </div>
+
+  <br>
+
+  <ion-label style="color: #000000; padding-left: 1px;">
+    Password:
+  </ion-label>
+
+  <br>
+  
+  <div style="padding-left: 1px;">
+  <ion-input type="text" placeholder="   Enter your password" name="password" style="--color: #000000;  background-color: rgba(0, 0, 0, 0.1); width: 1228px; border-radius: 5px;"></ion-input>
+  </div>
   
   <br>
-  <ion-button (click)="logIn()" style="--background: #333333; --color: #ffffff;">Login</ion-button>
+  <ion-button (click)="logIn()" style="--background: #000000; --color: #ffffff;">Login</ion-button>
+
 </ion-content>

@@ -1,13 +1,81 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>contact</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar style="--background: #ffffff;">
+  <ion-buttons slot="start">
+    <ion-back-button style="--color: #000000;" defaultHref="home.page"></ion-back-button>
+  </ion-buttons>
+  <ion-title style="text-align: center; font-weight: 900; color: #000000;">
+    Contact Us
+  </ion-title>
+</ion-toolbar>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">contact</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding" style="--background: #ffffff;">
+<ion-label style="color: #000000; padding-left: 120px; font-size: 20px;">
+  Any question? We would be happy to help you!
+</ion-label>
+
+<br>
+
+<ion-content class="ion-padding" style="--background: #ffffff;">
+  <div class="card-container" style="display: flex; justify-content: center;">
+  <ion-card style="color:#000000; background: #ffffff; width: 1000px; height: 50px; padding-top: 15px; text-align: center; border: 2px solid #000000; border-radius: 10px;">
+    <ion-icon name="call" style="width: 15px; height: 15px;"></ion-icon>
+    <ion-label style="color: #000000; font-size: 15px; padding-left: 10px;">
+      +0123456789
+    </ion-label>
+  </ion-card>
+  </div>
+
+  <div class="card-container" style="display: flex; justify-content: center;">
+    <ion-card style="color:#ffffff; background: #000000; width: 1000px; height: 50px; padding-top: 15px; text-align: center; border: 2px solid #000000; border-radius: 10px;">
+      <ion-icon name="mail-open-outline" style="width: 15px; height: 15px;"></ion-icon>
+      <ion-label style="color: #ffffff; font-size: 15px; padding-left: 10px;">
+        laundtracker&#64;gmail.com
+      </ion-label>
+    </ion-card>
+    </div>
+
+    <ion-label style="color: #000000; padding-left: 102px;">
+      ___________________________________________________________________________________________________________________
+    </ion-label>
+    <br>
+    <br>
+    <ion-label style="color: #000000; padding-left: 102px;">
+      Email:
+    </ion-label>
+
+    <br>
+    
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <ion-input type="text" placeholder="   Enter your email" name="email" style="--color: #000000;  background-color: rgba(0, 0, 0, 0.1); width: 995px; border-radius: 5px;"></ion-input>
+    </div>
+
+
+    <br>
+
+    <ion-label style="color: #000000; padding-left: 102px;">
+      Phone Number:
+    </ion-label>
+    
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <ion-input type="text" placeholder="   Enter your phone number" name="phone number" style="--color: #000000;  background-color: rgba(0, 0, 0, 0.1); width: 995px; border-radius: 5px;"></ion-input>
+    </div>
+
+    <br>
+
+    <ion-label style="color: #000000; padding-left: 102px;">
+      Message:
+    </ion-label>
+    
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <ion-input type="text" placeholder="   Enter your message" name="message" style="--color: #000000;  background-color: rgba(0, 0, 0, 0.1); width: 995px; height: 100px; border-radius: 5px;"></ion-input>
+    </div>
+    
+    <div style="padding-left: 93px;">
+    <ion-button (click)="message()" style="--background: #000000; --color: #ffffff;  width: 993px;">
+      Send Message
+      <div style="width: 20px; height: 20px;">
+      <img src="assets/message.svg">
+      </div>
+    </ion-button>
+    </div>
+
 </ion-content>
