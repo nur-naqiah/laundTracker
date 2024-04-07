@@ -18,4 +18,25 @@ export class DryMachinePage {
     // Example: Navigate to another page programmatically
     this.navCtrl.navigateForward('/dry-payment-page1');
   }
+
+  handleCardDryPayment2Click() {
+    // Perform the desired action when the card is clicked
+    console.log('Card clicked! Navigating to another page...');
+    // Example: Navigate to another page programmatically
+    this.navCtrl.navigateForward('/dry-payment-page2');
+  }
+
+  handleCardDryPayment3Click() {
+    // Perform the desired action when the card is clicked
+    console.log('Card clicked! Navigating to another page...');
+    // Example: Navigate to another page programmatically
+    this.navCtrl.navigateForward('/dry-payment-page3');
+  }
+
+  handleCardDryPayment4Click() {
+    // Perform the desired action when the card is clicked
+    console.log('Card clicked! Navigating to another page...');
+    // Example: Navigate to another page programmatically
+    this.navCtrl.navigateForward('/dry-payment-page4');
+  }
 }

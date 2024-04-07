@@ -52,8 +52,8 @@ const routes: Routes = [
     loadChildren: () => import('./dry-payment/dry-payment.module').then( m => m.DryPaymentPageModule)
   },
   {
-    path: 'payment-success',
-    loadChildren: () => import('./payment-success/payment-success.module').then( m => m.PaymentSuccessPageModule)
+    path: 'dry-payment-status',
+    loadChildren: () => import('./dry-payment-status/dry-payment-status.module').then( m => m.DryPaymentStatusPageModule)
   },
   {
     path: 'wash-timer',
@@ -62,7 +62,8 @@ const routes: Routes = [
   {
     path: 'dry-timer',
     loadChildren: () => import('./dry-timer/dry-timer.module').then( m => m.DryTimerPageModule)
-  },  {
+  },
+  {
     path: 'dry-payment-page1',
     loadChildren: () => import('./dry-payment-page1/dry-payment-page1.module').then( m => m.DryPaymentPage1PageModule)
   },
