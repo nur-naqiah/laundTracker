@@ -1,0 +1,46 @@
+.circular-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .timer-svg {
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .timer-circle-bg {
+    fill: none;
+    stroke: #ddd; /* Circle background color */
+    stroke-width: 10;
+  }
+  
+  .timer-circle {
+    fill: none;
+    stroke: #000000; /* Timer circle color */
+    stroke-width: 10;
+    stroke-dasharray: 565;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.5s;
+  }
+  
+  .timer-text {
+    font-size: 24px;
+    fill: #000000; /* Timer text color */
+  }
+
+  .success-message {
+    --ion-color-base: #ffffff; // Change base color (text color) to blue
+  }
+
+  /* Custom styles for alert boxes */
+  .custom-alert {
+    --background: #f8d7da; /* Set custom background color */
+    --border-color: #f5c6cb; /* Set custom border color */
+    --border-radius: 10px; /* Set border radius */
+    --padding-bottom: 16px; /* Set bottom padding */
+  }
+  
+  
+  

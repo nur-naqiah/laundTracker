@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-wash-machine',
@@ -8,81 +10,33 @@ import { AlertController } from '@ionic/angular';
 })
 export class WashMachinePage {
 
-  constructor(private alertController: AlertController) { }
+  constructor(private alertController: AlertController, private router: Router, private navCtrl: NavController) {}
 
-  startMachine() {
-    this.presentConfirmation();
+  handleCardWashPayment1Click() {
+    // Perform the desired action when the card is clicked
+    console.log('Card clicked! Navigating to another page...');
+    // Example: Navigate to another page programmatically
+    this.navCtrl.navigateForward('/wash-payment-page1');
   }
 
-  async presentConfirmation() {
-    const alert = await this.alertController.create({
-      header: 'Start Machine',
-      message: 'Do you want to start the machine?',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Cancel clicked');
-          }
-        }, {
-          text: 'Start',
-          handler: () => {
-            this.startMachineAlert();
-          }
-        }
-      ]
-    });
-
-    await alert.present();
+  handleCardWashPayment2Click() {
+    // Perform the desired action when the card is clicked
+    console.log('Card clicked! Navigating to another page...');
+    // Example: Navigate to another page programmatically
+    this.navCtrl.navigateForward('/wash-payment-page2');
   }
 
-  stopMachine() {
-    this.presentStopping();
+  handleCardWashPayment3Click() {
+    // Perform the desired action when the card is clicked
+    console.log('Card clicked! Navigating to another page...');
+    // Example: Navigate to another page programmatically
+    this.navCtrl.navigateForward('/wash-payment-page3');
   }
 
-  async presentStopping() {
-    const alert = await this.alertController.create({
-      header: 'Stop Machine',
-      message: 'Are you sure you want to stop the machine?',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Cancel clicked');
-          }
-        }, {
-          text: 'Stop',
-          handler: () => {
-            this.stopMachineAlert();
-          }
-        }
-      ]
-    });
-
-    await alert.present();
-  }
-
-  async stopMachineAlert() {
-    const alert = await this.alertController.create({
-      header: 'Machine Stopped',
-      message: 'The machine has stopped.',
-      buttons: ['OK']
-    });
-
-    await alert.present();
-  }
-
-  async startMachineAlert() {
-    const alert = await this.alertController.create({
-      header: 'Machine Started',
-      message: 'The machine has started.',
-      buttons: ['OK']
-    });
-
-    await alert.present();
+  handleCardWashPayment4Click() {
+    // Perform the desired action when the card is clicked
+    console.log('Card clicked! Navigating to another page...');
+    // Example: Navigate to another page programmatically
+    this.navCtrl.navigateForward('/wash-payment-page4');
   }
 }
