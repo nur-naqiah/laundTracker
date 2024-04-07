@@ -35,29 +35,21 @@ const routes: Routes = [
     path: 'dry-machine',
     loadChildren: () => import('./dry-machine/dry-machine.module').then(m => m.DryMachinePageModule)
   },
-  {
-    path: '**', // Wildcard route for undefined paths (e.g., 404 page)
-    redirectTo: 'home'
-  },
+  // {
+  //   path: '**', // Wildcard route for undefined paths (e.g., 404 page)
+  //   redirectTo: 'home'
+  // },
   {
     path: 'notification',
     loadChildren: () => import('./notification/notification.module').then( m => m.NotificationPageModule)
-  },
-  {
-    path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
-  },
-  {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
   {
     path: 'services',
     loadChildren: () => import('./services/services.module').then( m => m.ServicesPageModule)
   },
   {
-    path: 'payment',
-    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+    path: 'dry-payment',
+    loadChildren: () => import('./dry-payment/dry-payment.module').then( m => m.DryPaymentPageModule)
   },
   {
     path: 'payment-success',
@@ -70,9 +62,38 @@ const routes: Routes = [
   {
     path: 'dry-timer',
     loadChildren: () => import('./dry-timer/dry-timer.module').then( m => m.DryTimerPageModule)
+  },  {
+    path: 'dry-payment-page1',
+    loadChildren: () => import('./dry-payment-page1/dry-payment-page1.module').then( m => m.DryPaymentPage1PageModule)
+  },
+  {
+    path: 'wash-payment-page1',
+    loadChildren: () => import('./wash-payment-page1/wash-payment-page1.module').then( m => m.WashPaymentPage1PageModule)
+  },
+  {
+    path: 'wash-payment-page2',
+    loadChildren: () => import('./wash-payment-page2/wash-payment-page2.module').then( m => m.WashPaymentPage2PageModule)
+  },
+  {
+    path: 'wash-payment-page3',
+    loadChildren: () => import('./wash-payment-page3/wash-payment-page3.module').then( m => m.WashPaymentPage3PageModule)
+  },
+  {
+    path: 'wash-payment-page4',
+    loadChildren: () => import('./wash-payment-page4/wash-payment-page4.module').then( m => m.WashPaymentPage4PageModule)
+  },
+  {
+    path: 'dry-payment-page2',
+    loadChildren: () => import('./dry-payment-page2/dry-payment-page2.module').then( m => m.DryPaymentPage2PageModule)
+  },
+  {
+    path: 'dry-payment-page3',
+    loadChildren: () => import('./dry-payment-page3/dry-payment-page3.module').then( m => m.DryPaymentPage3PageModule)
+  },
+  {
+    path: 'dry-payment-page4',
+    loadChildren: () => import('./dry-payment-page4/dry-payment-page4.module').then( m => m.DryPaymentPage4PageModule)
   }
-
-
 
 ];
 

@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PaymentPage } from './payment.page';
+import { DryPaymentPage } from './dry-payment.page';
 
-describe('PaymentPage', () => {
-  let component: PaymentPage;
-  let fixture: ComponentFixture<PaymentPage>;
+describe('DryPaymentPage', () => {
+  let component: DryPaymentPage;
+  let fixture: ComponentFixture<DryPaymentPage>;
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(PaymentPage);
+    fixture = TestBed.createComponent(DryPaymentPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
