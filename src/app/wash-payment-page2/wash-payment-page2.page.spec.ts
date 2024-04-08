@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { WashPaymentPage2Page } from './wash-payment-page2.page';
 
-describe('WashPaymentPage1Page', () => {
+describe('WashPaymentPage2Page', () => {
   let component: WashPaymentPage2Page;
   let fixture: ComponentFixture<WashPaymentPage2Page>;
 

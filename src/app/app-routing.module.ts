@@ -99,7 +99,11 @@ const routes: Routes = [
   {
     path: 'dry-payment-page4',
     loadChildren: () => import('./dry-payment-page4/dry-payment-page4.module').then( m => m.DryPaymentPage4PageModule)
+  },  {
+    path: 'wash-payment-status',
+    loadChildren: () => import('./wash-payment-status/wash-payment-status.module').then( m => m.WashPaymentStatusPageModule)
   }
+
 
 ];
 
