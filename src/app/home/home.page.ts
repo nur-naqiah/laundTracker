@@ -8,14 +8,8 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  userName = 'John Doe'; // Example user name
 
   constructor(private router: Router, private navCtrl: NavController) {}
-
-  goToProfile() {
-    // Navigate to profile page
-    this.router.navigate(['/profile']);
-  }
 
   goToNotifications() {
     // Navigate to notifications page
