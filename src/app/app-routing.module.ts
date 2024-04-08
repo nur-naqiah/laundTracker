@@ -17,10 +17,6 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
-  },
-  {
     path: 'notifications',
     loadChildren: () => import('./notification/notification.module').then(m => m.NotificationPageModule)
   },
@@ -40,17 +36,9 @@ const routes: Routes = [
     path: 'dry-machine',
     loadChildren: () => import('./dry-machine/dry-machine.module').then(m => m.DryMachinePageModule)
   },
-  // {
-  //   path: '**', // Wildcard route for undefined paths (e.g., 404 page)
-  //   redirectTo: 'home'
-  // },
   {
     path: 'notification',
     loadChildren: () => import('./notification/notification.module').then( m => m.NotificationPageModule)
-  },
-  {
-    path: 'services',
-    loadChildren: () => import('./services/services.module').then( m => m.ServicesPageModule)
   },
   {
     path: 'dry-payment',
@@ -99,7 +87,8 @@ const routes: Routes = [
   {
     path: 'dry-payment-page4',
     loadChildren: () => import('./dry-payment-page4/dry-payment-page4.module').then( m => m.DryPaymentPage4PageModule)
-  },  {
+  },
+  {
     path: 'wash-payment-status',
     loadChildren: () => import('./wash-payment-status/wash-payment-status.module').then( m => m.WashPaymentStatusPageModule)
   },
