@@ -102,6 +102,22 @@ const routes: Routes = [
   },  {
     path: 'wash-payment-status',
     loadChildren: () => import('./wash-payment-status/wash-payment-status.module').then( m => m.WashPaymentStatusPageModule)
+  },
+  {
+    path: 'wash-timer2',
+    loadChildren: () => import('./wash-timer2/wash-timer2.module').then( m => m.WashTimer2PageModule)
+  },
+  {
+    path: 'dry-timer2',
+    loadChildren: () => import('./dry-timer2/dry-timer2.module').then( m => m.DryTimer2PageModule)
+  },
+  {
+    path: 'dry-payment-status2',
+    loadChildren: () => import('./dry-payment-status2/dry-payment-status2.module').then( m => m.DryPaymentStatus2PageModule)
+  },
+  {
+    path: 'wash-payment-status2',
+    loadChildren: () => import('./wash-payment-status2/wash-payment-status2.module').then( m => m.WashPaymentStatus2PageModule)
   }
 
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dry-payment-page2',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class DryPaymentPage2Page {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
+
+  pay() {
+    // Navigate to the appropriate route for getting started
+    this.router.navigateByUrl('/dry-payment-status2');
+  }
 
 }

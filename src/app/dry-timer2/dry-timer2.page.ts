@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-dry-timer',
-  templateUrl: './dry-timer.page.html',
-  styleUrls: ['./dry-timer.page.scss'],
+  selector: 'app-dry-timer2',
+  templateUrl: './dry-timer2.page.html',
+  styleUrls: ['./dry-timer2.page.scss'],
 })
-export class DryTimerPage {
-  displayTime: string = '15:00'; // Initial timer value (15 minutes)
+export class DryTimer2Page {
+  displayTime: string = '30:00'; // Initial timer value (15 minutes)
   timer: any;
   isTimerRunning: boolean = false;
 
@@ -31,19 +31,19 @@ export class DryTimerPage {
           text: 'Start',
           handler: () => {
             this.isTimerRunning = true;
-            let totalSeconds = 900; // 15 minutes (15 * 60 seconds)
+            let totalSeconds = 1800; // 15 minutes (15 * 60 seconds)
             this.timer = setInterval(() => {
               if (totalSeconds === 0) {
                 this.stopTimer();
               } else {
                 totalSeconds--;
                 this.displayTime = this.formatTime(totalSeconds);
-                this.updateCircleTimer(totalSeconds, 900); // Update circular timer (15 minutes)
+                this.updateCircleTimer(totalSeconds, 1800); // Update circular timer (15 minutes)
               }
             }, 1000);
 
             // Show success message with custom styles
-            this.presentSuccessMessage('The machine has started', 'custom-alert');
+            this.presentSuccessMessage('The machine has stopped', 'custom-alert');
           }
         }
       ],
@@ -67,8 +67,8 @@ export class DryTimerPage {
           handler: () => {
             this.isTimerRunning = false;
             clearInterval(this.timer);
-            this.displayTime = '15:00'; // Reset timer to 15 minutes
-            this.updateCircleTimer(0, 900); // Reset circular timer (15 minutes)
+            this.displayTime = '30:00'; // Reset timer to 15 minutes
+            this.updateCircleTimer(0, 180000); // Reset circular timer (15 minutes)
 
             // Show success message with custom styles
             this.presentSuccessMessage('The machine has stopped', 'custom-alert');
@@ -93,10 +93,10 @@ export class DryTimerPage {
     const progress = timeLeft / timerDuration;
     const dashoffset = circumference * (1 - progress);
     timerCircle.style.strokeDashoffset = dashoffset.toString();
-
+  
     const timerText = document.querySelector('.timer-text') as SVGTextElement;
     timerText.textContent = this.displayTime;
-  }
+  }  
 
   async presentSuccessMessage(message: string, cssClass: string) {
     const alert = await this.alertController.create({

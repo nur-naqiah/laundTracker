@@ -14,7 +14,7 @@ export class WashPaymentPage2Page {
 
   pay() {
     // Navigate to the appropriate route for getting started
-    this.router.navigateByUrl('/wash-payment-status');
+    this.router.navigateByUrl('/wash-payment-status2');
   }
 
 }

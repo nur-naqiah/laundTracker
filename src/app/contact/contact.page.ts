@@ -10,11 +10,14 @@ export class ContactPage {
 
   constructor(
     private router: Router,
+    
   ) { }
 
   message() {
     // Navigate to the appropriate route for getting started
     this.router.navigateByUrl('/home');
   }
+
+  
 
 }

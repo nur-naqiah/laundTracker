@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-dry-timer',
-  templateUrl: './dry-timer.page.html',
-  styleUrls: ['./dry-timer.page.scss'],
+  selector: 'app-wash-timer2',
+  templateUrl: './wash-timer2.page.html',
+  styleUrls: ['./wash-timer2.page.scss'],
 })
-export class DryTimerPage {
-  displayTime: string = '15:00'; // Initial timer value (15 minutes)
+export class WashTimer2Page {
+  displayTime: string = '10:00'; // Initial timer value (15 minutes)
   timer: any;
   isTimerRunning: boolean = false;
 
@@ -31,14 +31,14 @@ export class DryTimerPage {
           text: 'Start',
           handler: () => {
             this.isTimerRunning = true;
-            let totalSeconds = 900; // 15 minutes (15 * 60 seconds)
+            let totalSeconds = 600; // 15 minutes (15 * 60 seconds)
             this.timer = setInterval(() => {
               if (totalSeconds === 0) {
                 this.stopTimer();
               } else {
                 totalSeconds--;
                 this.displayTime = this.formatTime(totalSeconds);
-                this.updateCircleTimer(totalSeconds, 900); // Update circular timer (15 minutes)
+                this.updateCircleTimer(totalSeconds, 600); // Update circular timer (15 minutes)
               }
             }, 1000);
 
@@ -67,8 +67,8 @@ export class DryTimerPage {
           handler: () => {
             this.isTimerRunning = false;
             clearInterval(this.timer);
-            this.displayTime = '15:00'; // Reset timer to 15 minutes
-            this.updateCircleTimer(0, 900); // Reset circular timer (15 minutes)
+            this.displayTime = '10:00'; // Reset timer to 15 minutes
+            this.updateCircleTimer(0, 600); // Reset circular timer (15 minutes)
 
             // Show success message with custom styles
             this.presentSuccessMessage('The machine has stopped', 'custom-alert');
@@ -93,7 +93,7 @@ export class DryTimerPage {
     const progress = timeLeft / timerDuration;
     const dashoffset = circumference * (1 - progress);
     timerCircle.style.strokeDashoffset = dashoffset.toString();
-
+  
     const timerText = document.querySelector('.timer-text') as SVGTextElement;
     timerText.textContent = this.displayTime;
   }

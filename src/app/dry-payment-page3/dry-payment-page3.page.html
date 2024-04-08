@@ -34,17 +34,28 @@
       <h2 style="color: #000000; padding-left: 352px; font-weight: 900; font-size: 22px;">Payment Type</h2>
 
       <div class="card-container" style="display: flex; justify-content: center;  align-items: center;">
-        <ion-card class="centered-card" style="width: 50%; height: 220px; --background: #ffffff; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s ease;">
+        <ion-card class="centered-card" style="width: 50%; height: 250px; --background: #ffffff; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s ease;">
           <ion-card-content style="color: #000000; font-size: medium; padding-left: 30px;">
             <ion-label class="custom-label" style="display: flex; justify-content: space-between;">
             <span class="left-text" style="text-align: left; padding-left: 15px; font-weight: bold;"><img src="assets/mastercard.jpg" alt="debitcard" style="width: 100px; height: 80px; padding-left: 15px; padding-top: 10px;" alt="debitcard"></span>
-            <span class="right-text" style="text-align: right; padding-right: 100px; padding-top: 10px; font-weight: bold; font-size: 20px;">Debit Mastercard (2406)</span>
+            <span class="right-text" style="text-align: right; padding-right: 100px; padding-top: 10px; font-weight: bold; font-size: 20px;">Debit Mastercard (2406) <br> Exp: 04/25 <br> Emma Smith</span>
             </ion-label>
-            <ion-label class="custom-label" style="display: flex; justify-content: space-between;">
-              <span class="left-text"></span>
-              <span class="right-text" style="text-align: right; padding-right: 100px; padding-top: -10px; font-weight: bold; font-size: 20px;">Debit Mastercard (2406) <br> Exp: 04/25</span>
+            <br>
+            <ion-label>
+              <span class="left-text" style="text-align: left; padding-left: 15px; font-weight: bold;">
+                CVV
+                <br>
+                <ion-card style="width: 100px; height: 50px; --color: #000000;  background-color: rgba(0, 0, 0, 0.1); color: #000000;" >
+                  <p style="font-size: 20px; padding-top: 15px; padding-left: 15px;">246    <ion-icon name="wallet-outline"></ion-icon></p>
+                </ion-card>
+              </span>
             </ion-label>
           </ion-card-content>
         </ion-card>
       </div>
+
+      <ion-button (click)="pay()" style="--background: #000000; color: #ffffff; padding-left: 306px; width: 923px;">
+        Pay
+      </ion-button>
+
     </ion-content>
