@@ -8,7 +8,7 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./dry-timer2.page.scss'],
 })
 export class DryTimer2Page {
-  displayTime: string = '30:00'; // Initial timer value (15 minutes)
+  displayTime: string = '30:00'; 
   timer: any;
   isTimerRunning: boolean = false;
 
@@ -31,23 +31,22 @@ export class DryTimer2Page {
           text: 'Start',
           handler: () => {
             this.isTimerRunning = true;
-            let totalSeconds = 1800; // 15 minutes (15 * 60 seconds)
+            let totalSeconds = 1800; 
             this.timer = setInterval(() => {
               if (totalSeconds === 0) {
                 this.stopTimer();
               } else {
                 totalSeconds--;
                 this.displayTime = this.formatTime(totalSeconds);
-                this.updateCircleTimer(totalSeconds, 1800); // Update circular timer (15 minutes)
+                this.updateCircleTimer(totalSeconds, 1800); 
               }
             }, 1000);
 
-            // Show success message with custom styles
             this.presentSuccessMessage('The machine has stopped', 'custom-alert');
           }
         }
       ],
-      cssClass: 'custom-alert' // Apply custom CSS class to alert
+      cssClass: 'custom-alert' 
     });
 
     await alert.present();
@@ -67,15 +66,14 @@ export class DryTimer2Page {
           handler: () => {
             this.isTimerRunning = false;
             clearInterval(this.timer);
-            this.displayTime = '30:00'; // Reset timer to 15 minutes
-            this.updateCircleTimer(0, 180000); // Reset circular timer (15 minutes)
+            this.displayTime = '30:00'; 
+            this.updateCircleTimer(0, 180000); 
 
-            // Show success message with custom styles
             this.presentSuccessMessage('The machine has stopped', 'custom-alert');
           }
         }
       ],
-      cssClass: 'custom-alert' // Apply custom CSS class to alert
+      cssClass: 'custom-alert' 
     });
 
     await alert.present();
@@ -89,7 +87,7 @@ export class DryTimer2Page {
 
   updateCircleTimer(timeLeft: number, timerDuration: number) {
     const timerCircle = document.querySelector('.timer-circle') as SVGCircleElement;
-    const circumference = 2 * Math.PI * 90; // Circumference of the circle (2 * π * r)
+    const circumference = 2 * Math.PI * 90; 
     const progress = timeLeft / timerDuration;
     const dashoffset = circumference * (1 - progress);
     timerCircle.style.strokeDashoffset = dashoffset.toString();
@@ -103,7 +101,7 @@ export class DryTimer2Page {
       header: 'Success',
       message: message,
       buttons: ['OK'],
-      cssClass: cssClass // Apply custom CSS class to alert
+      cssClass: cssClass 
     });
 
     await alert.present();

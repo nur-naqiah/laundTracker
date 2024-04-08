@@ -13,7 +13,6 @@ export class DryPaymentPage2Page {
   ) { }
 
   pay() {
-    // Navigate to the appropriate route for getting started
     this.router.navigateByUrl('/dry-payment-status2');
   }
 

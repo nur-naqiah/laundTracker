@@ -14,7 +14,6 @@ export class ContactPage {
   ) { }
 
   message() {
-    // Navigate to the appropriate route for getting started
     this.router.navigateByUrl('/home');
   }
 

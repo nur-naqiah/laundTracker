@@ -40,10 +40,7 @@ const routes: Routes = [
     path: 'notification',
     loadChildren: () => import('./notification/notification.module').then( m => m.NotificationPageModule)
   },
-  {
-    path: 'dry-payment',
-    loadChildren: () => import('./dry-payment/dry-payment.module').then( m => m.DryPaymentPageModule)
-  },
+
   {
     path: 'dry-payment-status',
     loadChildren: () => import('./dry-payment-status/dry-payment-status.module').then( m => m.DryPaymentStatusPageModule)

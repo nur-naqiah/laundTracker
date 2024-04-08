@@ -13,7 +13,6 @@ export class WashPaymentPage3Page {
   ) { }
 
   pay() {
-    // Navigate to the appropriate route for getting started
     this.router.navigateByUrl('/wash-payment-status');
   }
 

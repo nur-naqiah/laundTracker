@@ -13,7 +13,6 @@ export class WashPaymentStatus2Page {
   ) { }
 
   proceed() {
-    // Navigate to the appropriate route for getting started
     this.router.navigateByUrl('/wash-timer2');
   }
 

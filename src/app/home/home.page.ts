@@ -40,14 +40,12 @@ export class HomePage {
   handleCardDryClick() {
     // Perform the desired action when the card is clicked
     console.log('Card clicked! Navigating to another page...');
-    // Example: Navigate to another page programmatically
     this.navCtrl.navigateForward('/dry-machine');
   }
 
   handleCardWashClick() {
     // Perform the desired action when the card is clicked
     console.log('Card clicked! Navigating to another page...');
-    // Example: Navigate to another page programmatically
     this.navCtrl.navigateForward('/wash-machine');
   }
 

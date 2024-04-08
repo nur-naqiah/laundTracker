@@ -13,7 +13,6 @@ export class DryPaymentStatusPage {
   ) { }
 
   proceed() {
-    // Navigate to the appropriate route for getting started
     this.router.navigateByUrl('/dry-timer');
   }
 

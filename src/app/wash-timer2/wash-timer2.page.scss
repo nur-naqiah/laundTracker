@@ -2,22 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Adjust height as needed */
+    height: 200px; 
   }
   
   .timer-svg {
-    width: 200px; /* Adjust width as needed */
+    width: 200px; 
   }
   
   .timer-circle-bg {
     fill: none;
-    stroke: #ddd; /* Circle background color */
+    stroke: #ddd; 
     stroke-width: 10;
   }
   
   .timer-circle {
     fill: none;
-    stroke: #000000; /* Timer circle color */
+    stroke: #000000; 
     stroke-width: 10;
     stroke-dasharray: 565;
     transform: rotate(-90deg);
@@ -27,19 +27,19 @@
   
   .timer-text {
     font-size: 24px;
-    fill: #000000; /* Timer text color */
+    fill: #000000; 
   }
 
   .success-message {
-    --ion-color-base: #ffffff; // Change base color (text color) to blue
+    --ion-color-base: #ffffff; 
   }
 
-  /* Custom styles for alert boxes */
+ 
   .custom-alert {
-    --background: #f8d7da; /* Set custom background color */
-    --border-color: #f5c6cb; /* Set custom border color */
-    --border-radius: 10px; /* Set border radius */
-    --padding-bottom: 16px; /* Set bottom padding */
+    --background: #f8d7da; 
+    --border-color: #f5c6cb; 
+    --border-radius: 10px; 
+    --padding-bottom: 16px; 
   }
   
   
